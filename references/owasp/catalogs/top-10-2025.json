@@ -1,0 +1,64 @@
+{
+  "framework": "OWASP Top 10",
+  "version": "2025",
+  "captured_at_utc": "2026-08-20T17:00:00Z",
+  "upstream_url": "https://owasp.org/Top10/2025/",
+  "source_repo": "https://github.com/OWASP/Top10/tree/master/2025",
+  "license_note": "OWASP materials — follow project license; paraphrase; cite OWASP.",
+  "advisory_only": true,
+  "entries": [
+    {
+      "id": "A01:2025",
+      "name": "Broken Access Control",
+      "outcome": "Enforce authorization consistently; deny by default; prevent IDOR and privilege escalation."
+    },
+    {
+      "id": "A02:2025",
+      "name": "Security Misconfiguration",
+      "outcome": "Harden defaults, cloud/IAM config, headers, and unnecessary features."
+    },
+    {
+      "id": "A03:2025",
+      "name": "Software Supply Chain Failures",
+      "outcome": "Prove provenance of dependencies, build pipelines, and third-party components."
+    },
+    {
+      "id": "A04:2025",
+      "name": "Cryptographic Failures",
+      "outcome": "Use modern crypto correctly; protect data at rest and in transit."
+    },
+    {
+      "id": "A05:2025",
+      "name": "Injection",
+      "outcome": "Separate code from data; validate/encode inputs for interpreters."
+    },
+    {
+      "id": "A06:2025",
+      "name": "Insecure Design",
+      "outcome": "Threat-model early; design for abuse cases and trust boundaries."
+    },
+    {
+      "id": "A07:2025",
+      "name": "Authentication Failures",
+      "outcome": "Strong identity proofing, session management, MFA, and credential handling."
+    },
+    {
+      "id": "A08:2025",
+      "name": "Software or Data Integrity Failures",
+      "outcome": "Protect CI/CD, updates, and critical data from unauthorized modification."
+    },
+    {
+      "id": "A09:2025",
+      "name": "Security Logging and Alerting Failures",
+      "outcome": "Log security-relevant events and alert on actionable signals."
+    },
+    {
+      "id": "A10:2025",
+      "name": "Mishandling of Exceptional Conditions",
+      "outcome": "Handle errors and edge conditions safely without leaking control or data."
+    }
+  ],
+  "counts": {
+    "entries": 10
+  }
+}

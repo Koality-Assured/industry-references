@@ -1,0 +1,55 @@
+{
+  "framework": "threat-modeling-process",
+  "origin": "CMS Threat Modeling Handbook (methodology paraphrase)",
+  "captured_at_utc": "2026-08-20T18:05:00Z",
+  "upstream_url": "https://security.cms.gov/learn/cms-threat-modeling-handbook",
+  "upstream_last_reviewed": "2024-02-21",
+  "advisory_only": true,
+  "four_questions": [
+    {
+      "id": "fq-1",
+      "text": "What are we working on?"
+    },
+    {
+      "id": "fq-2",
+      "text": "What can go wrong?"
+    },
+    {
+      "id": "fq-3",
+      "text": "What are we going to do about it?"
+    },
+    {
+      "id": "fq-4",
+      "text": "Did we do a good enough job?"
+    }
+  ],
+  "stride_letters": [
+    { "id": "S", "name": "Spoofing", "property": "Authentication" },
+    { "id": "T", "name": "Tampering", "property": "Integrity" },
+    { "id": "R", "name": "Repudiation", "property": "Non-repudiation" },
+    { "id": "I", "name": "Information Disclosure", "property": "Confidentiality" },
+    { "id": "D", "name": "Denial of Service", "property": "Availability" },
+    { "id": "E", "name": "Elevation of Privilege", "property": "Authorization" }
+  ],
+  "dfd_elements": [
+    { "id": "external-entity", "name": "External entity" },
+    { "id": "process", "name": "Process" },
+    { "id": "data-store", "name": "Data store" },
+    { "id": "data-flow", "name": "Data flow" },
+    { "id": "trust-boundary", "name": "Trust boundary" },
+    { "id": "tuple", "name": "Tuple", "fields": ["source", "destination", "data_type"] }
+  ],
+  "personas": [
+    { "id": "developer", "name": "Developer" },
+    { "id": "business", "name": "Business" },
+    { "id": "security", "name": "Security" },
+    { "id": "infrastructure", "name": "Infrastructure" },
+    { "id": "coordinator", "name": "Threat Model Coordinator" }
+  ],
+  "counts": {
+    "four_questions": 4,
+    "stride_letters": 6,
+    "dfd_elements": 6,
+    "personas": 5
+  }
+}

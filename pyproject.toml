@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "koality-industry-references"
+version = "1.0.0"
+description = "Normalized machine-readable catalogs and guides for industry frameworks (OWASP, MITRE, NIST, CWE, Conventional Commits)."
+authors = [{ name = "Koality-Assured", email = "engineering@koality-assured.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"

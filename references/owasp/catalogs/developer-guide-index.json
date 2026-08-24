@@ -1,0 +1,81 @@
+{
+  "framework": "OWASP Developer Guide",
+  "version": "4.1.9",
+  "released": "2025-07-18",
+  "captured_at_utc": "2026-08-20T17:00:00Z",
+  "upstream_url": "https://devguide.owasp.org/",
+  "repo": "https://github.com/OWASP/DevGuide",
+  "pdf_release": "https://github.com/OWASP/DevGuide/releases/download/v4.1.9/OWASP_Developer_Guide-V4.1.9.pdf",
+  "advisory_only": true,
+  "chapters": [
+    {
+      "id": "02-foundations",
+      "name": "02 Foundations",
+      "path": "docs/en/02-foundations",
+      "url": "https://devguide.owasp.org/"
+    },
+    {
+      "id": "03-requirements",
+      "name": "03 Requirements",
+      "path": "docs/en/03-requirements",
+      "url": "https://devguide.owasp.org/"
+    },
+    {
+      "id": "04-design",
+      "name": "04 Design",
+      "path": "docs/en/04-design",
+      "url": "https://devguide.owasp.org/"
+    },
+    {
+      "id": "05-implementation",
+      "name": "05 Implementation",
+      "path": "docs/en/05-implementation",
+      "url": "https://devguide.owasp.org/"
+    },
+    {
+      "id": "06-verification",
+      "name": "06 Verification",
+      "path": "docs/en/06-verification",
+      "url": "https://devguide.owasp.org/"
+    },
+    {
+      "id": "07-training-education",
+      "name": "07 Training Education",
+      "path": "docs/en/07-training-education",
+      "url": "https://devguide.owasp.org/"
+    },
+    {
+      "id": "08-culture-process",
+      "name": "08 Culture Process",
+      "path": "docs/en/08-culture-process",
+      "url": "https://devguide.owasp.org/"
+    },
+    {
+      "id": "09-operations",
+      "name": "09 Operations",
+      "path": "docs/en/09-operations",
+      "url": "https://devguide.owasp.org/"
+    },
+    {
+      "id": "10-metrics",
+      "name": "10 Metrics",
+      "path": "docs/en/10-metrics",
+      "url": "https://devguide.owasp.org/"
+    },
+    {
+      "id": "11-security-gap-analysis",
+      "name": "11 Security Gap Analysis",
+      "path": "docs/en/11-security-gap-analysis",
+      "url": "https://devguide.owasp.org/"
+    },
+    {
+      "id": "12-appendices",
+      "name": "12 Appendices",
+      "path": "docs/en/12-appendices",
+      "url": "https://devguide.owasp.org/"
+    }
+  ],
+  "counts": {
+    "chapters": 11
+  }
+}

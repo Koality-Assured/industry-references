@@ -1,0 +1,130 @@
+{
+  "framework": "OWASP GenAI LLM Top 10",
+  "version": "2026",
+  "published": "2026-08-04",
+  "captured_at_utc": "2026-08-20T17:00:00Z",
+  "upstream_url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/",
+  "canonical_source": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/tree/main/2026/final",
+  "license_note": "CC-BY-SA — cite OWASP GenAI Security Project; paraphrase; do not paste full publication.",
+  "advisory_only": true,
+  "entries": [
+    {
+      "id": "LLM01:2026",
+      "short_id": "LLM01",
+      "name": "Prompt Injection",
+      "summary": "A prompt-injection vulnerability occurs when input to a large language model (LLM), whether direct user input, retrieved content, tool output, image, audio, or video content, intermediate reasoning, or persistent memory, alters the model's behavior in ways the application developer did not intend. LLMs make no architectural distinction between \"instructions\" and \"data\" (both are tokens on the same stream), so there i",
+      "typical_impact": "Disclosure of sensitive information, system-prompt content, retrieved private documents, or infrastructure details.; Manipulation of model output to produce biased, harmful, or attacker-chosen content that downstream systems or users act on.; Unauthorized invocation of tools the agent is permitted to call, escalating to arbitrary command execution and destructive actions where the agent has shell, file-system, or cloud-API access.",
+      "example_mitigations": [
+        "Constrain the model's role and capabilities in the system prompt",
+        "Define a strict output schema and validate every response in trusted application code",
+        "Filter at every modality boundary (text, image, audio, structured data), not just text",
+        "Hold credentials and state-change capability in application code, not the model, and grant least privilege per operation"
+      ],
+      "upstream_md": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM01_PromptInjection.md"
+    },
+    {
+      "id": "LLM02:2026",
+      "short_id": "LLM02",
+      "name": "Sensitive Information Disclosure",
+      "summary": "Sensitive information disclosure occurs when an LLM-integrated system exposes confidential, regulated, privileged, or proprietary data through a channel the data subject, controller, or system owner did not authorize. The channel is not only the final answer: tool-call arguments, reasoning traces, retrieved chunks, multimodal output, logs, telemetry, embeddings, and observable inference properties (timing, token leng",
+      "typical_impact": "See upstream publication for impact examples.",
+      "example_mitigations": [],
+      "upstream_md": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM02_SensitiveInformationDisclosure.md"
+    },
+    {
+      "id": "LLM03:2026",
+      "short_id": "LLM03",
+      "name": "Excessive Agency",
+      "summary": "An LLM-based system is often granted a degree of agency by its developer: the ability to call functions or interface with other systems via tools (also called extensions, plugins, or skills by different vendors) to undertake actions in response to a prompt. An LLM agent may also select which tool to invoke dynamically, based on the input prompt or prior LLM output. Agent-based systems will typically make repeated cal",
+      "typical_impact": "See upstream publication for impact examples.",
+      "example_mitigations": [],
+      "upstream_md": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM03_ExcessiveAgency.md"
+    },
+    {
+      "id": "LLM04:2026",
+      "short_id": "LLM04",
+      "name": "Supply Chain",
+      "summary": "LLM supply chains are susceptible to vulnerabilities that affect the integrity of training data, models, adapters, conversion pipelines, and deployment platforms, resulting in biased outputs, security breaches, or system failures. While traditional software vulnerabilities focus on code flaws and dependencies, in ML the risks extend to third-party pre-trained models, datasets, and model artifacts, which can be manipu",
+      "typical_impact": "See upstream publication for impact examples.",
+      "example_mitigations": [
+        "Carefully vet data sources and suppliers, including T&Cs and privacy policies, and only use trusted suppliers. Regularly review and audit supplier security and ",
+        "Apply the mitigations in the OWASP Top Ten's [A06:2021 Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)",
+        "Apply AI red teaming and evaluations when selecting third-party models, focused on the use cases in scope, and continue in production with anomaly detection and",
+        "Maintain an up-to-date, signed inventory of components using a Software Bill of Materials (SBOM), extended to models, adapters, and datasets with AI BOMs (AIBOM"
+      ],
+      "upstream_md": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM04_SupplyChain.md"
+    },
+    {
+      "id": "LLM05:2026",
+      "short_id": "LLM05",
+      "name": "Data and Model Poisoning",
+      "summary": "Data and Model Poisoning describes a class of attacks and failures where an adversary (or unsafe process) manipulates data or model artifacts to embed harmful behavior, bias, or exploitable weaknesses into an AI system. In modern GenAI environments, poisoning is not limited to \"training data\" in the traditional sense. It can occur anywhere data is ingested, transformed, retrieved, or reused, including during pre-trai",
+      "typical_impact": "See upstream publication for impact examples.",
+      "example_mitigations": [
+        "Track dataset and model lineage using SBOM/ML-BOM (e.g., CycloneDX), enforce signing and verification, and continuously validate data integrity across lifecycle",
+        "Establish strict validation for all incoming data, vet third-party vendors, and compare outputs against trusted sources to detect bias or adversarial manipulati",
+        "Protect RAG systems by enforcing trust boundaries, filtering retrieved content, applying source scoring, and isolating system instructions from external data.",
+        "Use sandboxing and strict isolation controls to limit model interaction with unverified data, tools, or external systems."
+      ],
+      "upstream_md": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM05_DataModelPoisoning.md"
+    },
+    {
+      "id": "LLM06:2026",
+      "short_id": "LLM06",
+      "name": "Unbounded Consumption",
+      "summary": "Unbounded Consumption occurs when an LLM application allows excessive and uncontrolled inferences, enabling attackers to disrupt service availability, inflict unsustainable financial costs, or steal intellectual property through model cloning, all by exploiting a common class of vulnerability: the absence of adequate controls over how resources are consumed.",
+      "typical_impact": "See upstream publication for impact examples.",
+      "example_mitigations": [],
+      "upstream_md": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM06_UnboundedConsumption.md"
+    },
+    {
+      "id": "LLM07:2026",
+      "short_id": "LLM07",
+      "name": "Misinformation",
+      "summary": "Misinformation occurs when an LLM or LLM-enabled application produces incorrect, incomplete, unsupported, or misleading information that appears credible enough to influence a human decision, an automated workflow, or an agent action. The core risk is that the incorrect output is trusted and acted upon.",
+      "typical_impact": "See upstream publication for impact examples.",
+      "example_mitigations": [
+        "Ground Claims Before Action: Require outputs to be grounded in authoritative and current sources.",
+        "Implement Claim-Check-Act Patterns: Separate generation from execution and verify claims before acting.",
+        "Validate Tool Calls: Check arguments, authorization, preconditions, and current state before execution.",
+        "Use Verification Signals (Not Just Confidence): Incorporate groundedness and consistency checks."
+      ],
+      "upstream_md": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM07_Misinformation.md"
+    },
+    {
+      "id": "LLM08:2026",
+      "short_id": "LLM08",
+      "name": "Hidden Context Exposure",
+      "summary": "Hidden Context Exposure is the unauthorized extraction, inference, or reconstruction of hidden, non-user-facing system instructions or operational context placed in a model's context. It becomes security-relevant when that hidden context contains or reveals secrets, policy logic, tools, trust boundaries, workflow criteria, proprietary behavior, or other sensitive implementation details that materially increase attack",
+      "typical_impact": "See upstream publication for impact examples.",
+      "example_mitigations": [],
+      "upstream_md": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM08_HiddenContextExposure.md"
+    },
+    {
+      "id": "LLM09:2026",
+      "short_id": "LLM09",
+      "name": "Vector and Embedding Weaknesses",
+      "summary": "Vector and embedding weaknesses present security risks in any LLM application that converts text, images, code, or audio into numerical representations and uses similarity search to decide what the model sees. Retrieval-Augmented Generation (RAG) is the most familiar case, but the same machinery underlies vector-backed agent memory, semantic caches, and deduplication pipelines. Whenever similarity search sits between",
+      "typical_impact": "See upstream publication for impact examples.",
+      "example_mitigations": [],
+      "upstream_md": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM09_VectorAndEmbeddingWeaknesses.md"
+    },
+    {
+      "id": "LLM10:2026",
+      "short_id": "LLM10",
+      "name": "Improper Output Handling",
+      "summary": "Improper Output Handling refers specifically to insufficient validation, sanitization, and handling of the outputs generated by large language models before they are passed downstream to other components and systems. Since LLM-generated content can be controlled by prompt input, this behavior is similar to providing users indirect access to additional functionality. Improper Output Handling concerns unsafe use of mod",
+      "typical_impact": "See upstream publication for impact examples.",
+      "example_mitigations": [
+        "Treat the model as any other user, adopting a zero-trust approach, and apply proper input validation on responses coming from the model to backend functions.",
+        "Follow the OWASP ASVS (Application Security Verification Standard) guidelines to ensure effective input validation and sanitization (OWASP, n.d.).",
+        "Encode model output back to users to mitigate undesired code execution by JavaScript or Markdown. OWASP ASVS provides detailed guidance on output encoding.",
+        "Implement context-aware output encoding based on where the LLM output will be used (for example, HTML encoding for web content, JavaScript encoding for browser "
+      ],
+      "upstream_md": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM10_ImproperOutputHandling.md"
+    }
+  ],
+  "counts": {
+    "entries": 10
+  }
+}

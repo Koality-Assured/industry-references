@@ -1,0 +1,53 @@
+{
+  "framework": "OWASP Top 10 Proactive Controls",
+  "version_note": "Current site nav labeled Future Top 10 (WIP); C1–C10 names from official mkdocs.yml / top10proactive.owasp.org as of capture.",
+  "captured_at_utc": "2026-08-20T17:00:00Z",
+  "upstream_url": "https://top10proactive.owasp.org/",
+  "repo": "https://github.com/OWASP/www-project-proactive-controls",
+  "advisory_only": true,
+  "controls": [
+    {
+      "id": "C1",
+      "name": "Implement Access Control"
+    },
+    {
+      "id": "C2",
+      "name": "Use Cryptography to Protect Data"
+    },
+    {
+      "id": "C3",
+      "name": "Validate all Input and Handle Exceptions"
+    },
+    {
+      "id": "C4",
+      "name": "Address Security from the Start"
+    },
+    {
+      "id": "C5",
+      "name": "Secure By Default Configurations"
+    },
+    {
+      "id": "C6",
+      "name": "Keep your Components Secure"
+    },
+    {
+      "id": "C7",
+      "name": "Secure Digital Identities"
+    },
+    {
+      "id": "C8",
+      "name": "Leverage Browser Security Features"
+    },
+    {
+      "id": "C9",
+      "name": "Implement Security Logging and Monitoring"
+    },
+    {
+      "id": "C10",
+      "name": "Stop Server Side Request Forgery"
+    }
+  ],
+  "counts": {
+    "controls": 10
+  }
+}

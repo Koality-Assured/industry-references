@@ -1,0 +1,49 @@
+{
+  "framework": "STRIDE",
+  "origin": "Microsoft",
+  "captured_at_utc": "2026-08-20T17:00:00Z",
+  "upstream_url": "https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats",
+  "related_training": "https://learn.microsoft.com/en-us/training/modules/tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk/1b-threat-modeling-framework",
+  "advisory_only": true,
+  "categories": [
+    {
+      "id": "S",
+      "name": "Spoofing",
+      "property": "Authentication",
+      "outcome": "Attacker pretends to be another user or component (stolen/forged identity)."
+    },
+    {
+      "id": "T",
+      "name": "Tampering",
+      "property": "Integrity",
+      "outcome": "Unauthorized modification of data at rest or in transit."
+    },
+    {
+      "id": "R",
+      "name": "Repudiation",
+      "property": "Non-repudiation",
+      "outcome": "Actor denies an action and the system cannot prove otherwise."
+    },
+    {
+      "id": "I",
+      "name": "Information Disclosure",
+      "property": "Confidentiality",
+      "outcome": "Information exposed to unauthorized parties."
+    },
+    {
+      "id": "D",
+      "name": "Denial of Service",
+      "property": "Availability",
+      "outcome": "Service degraded or denied to legitimate users."
+    },
+    {
+      "id": "E",
+      "name": "Elevation of Privilege",
+      "property": "Authorization",
+      "outcome": "Actor gains permissions beyond their authorized role."
+    }
+  ],
+  "counts": {
+    "categories": 6
+  }
+}
