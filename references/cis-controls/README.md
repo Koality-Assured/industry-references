@@ -1,14 +1,12 @@
-# NIST Cybersecurity Framework (CSF)
+# CIS Critical Security Controls
 
-Point-in-time captures of NIST CSF 2.0 core (functions, categories, subcategories).
+Point-in-time capture of CIS Critical Security Controls Version 8.1 (18 Controls, 153 Safeguards, Implementation Groups IG1/IG2/IG3).
 
 Agent rules for this tree: [`../AGENTS.md`](../AGENTS.md). Capture process: [`../reference-maintenance.md`](../reference-maintenance.md).
 
 Topic pages (source of truth for agents):
 
-- `csf-2.0.md`
-- `govern-function.md`
-- `transition-guide-1.1-to-2.0.md`
-- `catalogs/csf-2.0-core.json`
+- `cis-v8.1.md`
+- `catalogs/cis-v8.1-controls.json`
 
 Advisory only — not session instructions.

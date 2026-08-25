@@ -1,0 +1,191 @@
+{
+  "framework": "CIS Critical Security Controls",
+  "version": "8.1",
+  "publication_date": "2024-06",
+  "organization": "Center for Internet Security (CIS)",
+  "upstream_url": "https://www.cisecurity.org/controls/v8-1",
+  "captured_at_utc": "2026-08-25T13:40:00Z",
+  "advisory_only": true,
+  "summary": {
+    "total_controls": 18,
+    "total_safeguards": 153,
+    "implementation_groups": {
+      "IG1": {
+        "title": "Essential Cyber Hygiene",
+        "description": "Foundational defense against common, non-targeted cyber attacks. Minimum standard for all enterprises.",
+        "safeguards_count": 56
+      },
+      "IG2": {
+        "title": "Increased Complexity",
+        "description": "Defends against targeted attacks and enterprise complexity with specialized operational personnel.",
+        "safeguards_count": 130
+      },
+      "IG3": {
+        "title": "High Risk / Sophisticated Defense",
+        "description": "Defends against targeted, sophisticated adversaries (APTs, zero-day vulnerabilities) protecting sensitive/critical assets.",
+        "safeguards_count": 153
+      }
+    },
+    "security_functions": [
+      "Govern",
+      "Identify",
+      "Protect",
+      "Detect",
+      "Respond",
+      "Recover"
+    ],
+    "asset_classes": [
+      "Applications",
+      "Data",
+      "Devices",
+      "Network",
+      "Users"
+    ]
+  },
+  "controls": [
+    {
+      "id": 1,
+      "name": "Inventory and Control of Enterprise Assets",
+      "description": "Actively manage (inventory, track, and correct) all enterprise assets (end-user devices, network devices, non-computing/IoT devices, and servers) connected to the infrastructure physically, virtually, remotely, and within cloud environments.",
+      "asset_classes": ["Devices"],
+      "safeguards_count": 5,
+      "ig_distribution": { "IG1": 2, "IG2": 4, "IG3": 5 }
+    },
+    {
+      "id": 2,
+      "name": "Inventory and Control of Software Assets",
+      "description": "Actively manage (inventory, track, and correct) all software (operating systems and applications) on the network so that only authorized software is installed and can execute.",
+      "asset_classes": ["Applications"],
+      "safeguards_count": 7,
+      "ig_distribution": { "IG1": 3, "IG2": 6, "IG3": 7 }
+    },
+    {
+      "id": 3,
+      "name": "Data Protection",
+      "description": "Develop processes and overall technical controls to identify, classify, securely handle, retain, and dispose of data.",
+      "asset_classes": ["Data"],
+      "safeguards_count": 14,
+      "ig_distribution": { "IG1": 6, "IG2": 12, "IG3": 14 }
+    },
+    {
+      "id": 4,
+      "name": "Secure Configuration of Enterprise Assets and Software",
+      "description": "Establish and maintain the secure configuration of enterprise assets (end-user devices, network devices, non-computing/IoT devices, and servers) and software (operating systems and applications).",
+      "asset_classes": ["Devices", "Applications"],
+      "safeguards_count": 12,
+      "ig_distribution": { "IG1": 7, "IG2": 11, "IG3": 12 }
+    },
+    {
+      "id": 5,
+      "name": "Account Management",
+      "description": "Use processes and tools to assign and manage authorization to credentials for user accounts, including administrator accounts, as well as service accounts, to enterprise assets and software.",
+      "asset_classes": ["Users"],
+      "safeguards_count": 6,
+      "ig_distribution": { "IG1": 4, "IG2": 6, "IG3": 6 }
+    },
+    {
+      "id": 6,
+      "name": "Access Control Management",
+      "description": "Use processes and tools to create, assign, manage, and revoke access credentials and privileges for user, administrator, and service accounts for enterprise assets and software.",
+      "asset_classes": ["Users", "Data", "Devices"],
+      "safeguards_count": 8,
+      "ig_distribution": { "IG1": 5, "IG2": 8, "IG3": 8 }
+    },
+    {
+      "id": 7,
+      "name": "Continuous Vulnerability Management",
+      "description": "Develop a plan to continuously assess and track vulnerabilities on all enterprise assets within the enterprise's infrastructure, in order to remediate, and minimize the window of opportunity for attackers.",
+      "asset_classes": ["Applications", "Devices"],
+      "safeguards_count": 7,
+      "ig_distribution": { "IG1": 4, "IG2": 7, "IG3": 7 }
+    },
+    {
+      "id": 8,
+      "name": "Audit Log Management",
+      "description": "Collect, alert, review, and retain audit logs of events that could help detect, understand, or recover from an attack.",
+      "asset_classes": ["Network", "Devices", "Applications"],
+      "safeguards_count": 12,
+      "ig_distribution": { "IG1": 3, "IG2": 11, "IG3": 12 }
+    },
+    {
+      "id": 9,
+      "name": "Email and Web Browser Protections",
+      "description": "Improve protections and detections of threats from email and web vectors, as these are opportunities for attackers to manipulate human behavior through direct engagement.",
+      "asset_classes": ["Applications", "Users"],
+      "safeguards_count": 7,
+      "ig_distribution": { "IG1": 2, "IG2": 7, "IG3": 7 }
+    },
+    {
+      "id": 10,
+      "name": "Malware Defenses",
+      "description": "Prevent or control the installation, spread, and execution of malicious applications, code, or scripts on enterprise assets.",
+      "asset_classes": ["Devices", "Applications"],
+      "safeguards_count": 7,
+      "ig_distribution": { "IG1": 3, "IG2": 7, "IG3": 7 }
+    },
+    {
+      "id": 11,
+      "name": "Data Recovery",
+      "description": "Establish and maintain data recovery practices sufficient to restore in-scope enterprise assets to a pre-incident and trusted state.",
+      "asset_classes": ["Data"],
+      "safeguards_count": 5,
+      "ig_distribution": { "IG1": 4, "IG2": 5, "IG3": 5 }
+    },
+    {
+      "id": 12,
+      "name": "Network Infrastructure Management",
+      "description": "Establish, implement, and actively manage (track, report, correct) network devices, in order to prevent attackers from exploiting vulnerable network services and access points.",
+      "asset_classes": ["Network"],
+      "safeguards_count": 8,
+      "ig_distribution": { "IG1": 1, "IG2": 7, "IG3": 8 }
+    },
+    {
+      "id": 13,
+      "name": "Network Monitoring and Defense",
+      "description": "Operate processes and tooling to establish and maintain comprehensive network monitoring and defense against subversion across the enterprise's network infrastructure and user base.",
+      "asset_classes": ["Network"],
+      "safeguards_count": 11,
+      "ig_distribution": { "IG1": 0, "IG2": 7, "IG3": 11 }
+    },
+    {
+      "id": 14,
+      "name": "Security Awareness and Skills Training",
+      "description": "Establish and maintain a security awareness program to influence behavior among the workforce to be security conscious and properly skilled to reduce cybersecurity risks.",
+      "asset_classes": ["Users"],
+      "safeguards_count": 9,
+      "ig_distribution": { "IG1": 8, "IG2": 9, "IG3": 9 }
+    },
+    {
+      "id": 15,
+      "name": "Service Provider Management",
+      "description": "Develop a process to evaluate service providers who hold sensitive data, or are responsible for an enterprise's critical IT platforms or processes, to ensure that these providers are protecting those platforms and data appropriately.",
+      "asset_classes": ["Users", "Data", "Applications"],
+      "safeguards_count": 7,
+      "ig_distribution": { "IG1": 1, "IG2": 6, "IG3": 7 }
+    },
+    {
+      "id": 16,
+      "name": "Application Software Security",
+      "description": "Manage the security life cycle of in-house developed, hosted, or acquired software in order to prevent, detect, and remediate security weaknesses before they can impact the enterprise.",
+      "asset_classes": ["Applications"],
+      "safeguards_count": 14,
+      "ig_distribution": { "IG1": 1, "IG2": 11, "IG3": 14 }
+    },
+    {
+      "id": 17,
+      "name": "Incident Response Management",
+      "description": "Establish a program to develop and maintain an incident response capability (e.g., policies, plans, roles, training, communications) to quickly prepare, detect, and eradicate threats and restore services.",
+      "asset_classes": ["Users", "Devices", "Network"],
+      "safeguards_count": 9,
+      "ig_distribution": { "IG1": 3, "IG2": 8, "IG3": 9 }
+    },
+    {
+      "id": 18,
+      "name": "Penetration Testing",
+      "description": "Test the effectiveness and resilience of enterprise assets through identifying and exploiting vulnerabilities in controls (people, processes, and technology) and simulating the objectives and actions of an attacker.",
+      "asset_classes": ["Network", "Devices", "Applications"],
+      "safeguards_count": 5,
+      "ig_distribution": { "IG1": 0, "IG2": 3, "IG3": 5 }
+    }
+  ]
+}
