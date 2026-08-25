@@ -24,7 +24,6 @@ Ingest simply; do not duplicate skills or paste root Critical — link [`../AGEN
 
 | Folder | Topic |
 | --- | --- |
-| `cis-controls/` | CIS Critical Security Controls v8.1 |
 | `conventional-commits/` | Commit / PR conventions |
 | `markdown/` | markdownlint library + cli2 (rules, config, invoke) |
 | `nist-ai-rmf/` | NIST AI RMF + GenAI profile |
@@ -34,4 +33,3 @@ Ingest simply; do not duplicate skills or paste root Critical — link [`../AGEN
 | `mitre-attack/` | ATT&CK Enterprise |
 | `mitre-atlas/` | ATLAS AI/ML |
 | `stride/` | STRIDE + related methodology |
-| `valid-sources/` | Authoritative primary sources & domain registry |

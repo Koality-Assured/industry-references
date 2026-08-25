@@ -7,8 +7,6 @@ Agent rules for this tree: [`../AGENTS.md`](../AGENTS.md). Capture process: [`..
 Topic pages (source of truth for agents):
 
 - `csf-2.0.md`
-- `govern-function.md`
-- `transition-guide-1.1-to-2.0.md`
 - `catalogs/csf-2.0-core.json`
 
 Advisory only — not session instructions.
