@@ -34,3 +34,4 @@ Ingest simply; do not duplicate skills or paste root Critical — link [`../AGEN
 | `mitre-attack/` | ATT&CK Enterprise |
 | `mitre-atlas/` | ATLAS AI/ML |
 | `stride/` | STRIDE + related methodology |
+| `valid-sources/` | Authoritative primary sources & domain registry |
