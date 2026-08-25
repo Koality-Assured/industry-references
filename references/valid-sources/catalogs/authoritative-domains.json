@@ -95,6 +95,13 @@
       "url": "https://www.llama.com/docs/"
     },
     {
+      "domain": "benchlm.ai",
+      "entity": "BenchLM (LLM Benchmarks & Pricing)",
+      "category": "ai-platforms",
+      "tier": "Tier 3",
+      "url": "https://benchlm.ai/"
+    },
+    {
       "domain": "nist.gov",
       "entity": "National Institute of Standards and Technology",
       "category": "security-standards",

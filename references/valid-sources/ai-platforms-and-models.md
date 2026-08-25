@@ -46,10 +46,11 @@ Defines primary, authoritative documentation endpoints, API specifications, and 
 - **Trust Tier**: Tier 1 (Official Vendor Documentation)
 
 ### Verified Model Evaluation & Benchmarks
+- **BenchLM**: `https://benchlm.ai/` (Leaderboards, pricing index, speed, and research blog: `https://benchlm.ai/blog`)
 - **LMSYS Chatbot Arena**: `https://chat.lmsys.org/`
 - **Papers with Code (Evaluations)**: `https://paperswithcode.com/sota`
 - **Hugging Face Open LLM Leaderboard**: `https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard`
-- **Trust Tier**: Tier 3 (Empirical Community Benchmarks)
+- **Trust Tier**: Tier 3 (Empirical Community & Multi-Benchmark Leaderboards)
 
 ## Operational Usage
 
