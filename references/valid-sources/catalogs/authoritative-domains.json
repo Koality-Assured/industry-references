@@ -240,6 +240,20 @@
       "category": "devops-software",
       "tier": "Tier 1",
       "url": "https://docs.docker.com/"
+    },
+    {
+      "domain": "developer.atlassian.com",
+      "entity": "Atlassian Developer (Confluence & Jira APIs / Forge)",
+      "category": "devops-software",
+      "tier": "Tier 1",
+      "url": "https://developer.atlassian.com/"
+    },
+    {
+      "domain": "support.atlassian.com",
+      "entity": "Atlassian Support & Administration",
+      "category": "devops-software",
+      "tier": "Tier 1",
+      "url": "https://support.atlassian.com/"
     }
   ]
 }

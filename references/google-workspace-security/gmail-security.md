@@ -1,7 +1,8 @@
 ---
 doc_kind: reference
 canonical_id: google-gmail-security
-topics: [google, gmail, email-security, spf, dkim, dmarc, mta-sts, approval-gates]
+advisory_only: true
+topics: [google, gmail, email, dmarc, dkim, spf, dlp, security]
 ---
 
 # Google Gmail security reference

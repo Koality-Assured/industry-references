@@ -1,6 +1,7 @@
 ---
 doc_kind: reference
 canonical_id: google-workspace-admin-security
+advisory_only: true
 topics: [google, workspace, admin, sso, mfa, dlp, zdr, governance]
 ---
 

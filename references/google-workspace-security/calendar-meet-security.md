@@ -1,6 +1,7 @@
 ---
 doc_kind: reference
 canonical_id: google-calendar-meet-security
+advisory_only: true
 topics: [google, calendar, meet, videoconferencing, encryption, access-controls]
 ---
 

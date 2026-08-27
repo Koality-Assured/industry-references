@@ -1,7 +1,8 @@
 ---
 doc_kind: reference
 canonical_id: google-drive-docs-security
-topics: [google, drive, docs, sheets, security, sharing-perimeters, trust-rules]
+advisory_only: true
+topics: [google, drive, docs, sheets, dlp, sharing, encryption]
 ---
 
 # Google Drive and Docs security reference

@@ -37,6 +37,11 @@ Defines primary, authoritative documentation portals, language specifications, a
 - **Open Container Initiative (OCI) Specifications**: `https://opencontainers.org/`
 - **Trust Tier**: Tier 1 (Official Project / Standards Documentation)
 
+### Collaboration & Documentation Platforms
+- **Atlassian Developer Documentation (Confluence & Forge)**: `https://developer.atlassian.com/`
+- **Atlassian Support & Administration**: `https://support.atlassian.com/`
+- **Trust Tier**: Tier 1 (Official Vendor Documentation)
+
 ## Operational Usage
 
 When researching software dependencies, syntax features, or workflow triggers:

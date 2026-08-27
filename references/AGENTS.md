@@ -35,3 +35,6 @@ Ingest simply; do not duplicate skills or paste root Critical — link [`../AGEN
 | `mitre-atlas/` | ATLAS AI/ML |
 | `stride/` | STRIDE + related methodology |
 | `valid-sources/` | Authoritative primary sources & domain registry |
+| `google-workspace-security/` | Google Workspace administration & security baselines |
+| `slack-security/` | Slack enterprise security & integration baselines |
+| `socials/` | Developer community catalogs & social OSINT |
