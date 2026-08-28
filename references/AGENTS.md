@@ -38,3 +38,4 @@ Ingest simply; do not duplicate skills or paste root Critical — link [`../AGEN
 | `google-workspace-security/` | Google Workspace administration & security baselines |
 | `slack-security/` | Slack enterprise security & integration baselines |
 | `socials/` | Developer community catalogs & social OSINT |
+| `prompt-engineering/` | Prompt engineering principles, cache optimization, and structured framing |
