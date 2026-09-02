@@ -41,3 +41,5 @@ Ingest simply; do not duplicate skills or paste root Critical — link [`../AGEN
 | `prompt-engineering/` | Prompt engineering principles, cache optimization, and structured framing |
 | `financial/` | Financial regulatory compliance, SOX ITGC, PCI DSS, GLBA, FFIEC, NYDFS 500 |
 | `governance-privacy/` | Enterprise ISMS, privacy, GDPR, ISO/IEC 27001, SOC 2, CCPA/CPRA |
+| `iac/` | Infrastructure as Code (Terraform / OpenTofu, AWS baselines, backend security, provider conventions) |
+
