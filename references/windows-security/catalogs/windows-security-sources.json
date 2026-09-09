@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "family": "windows-security",
+  "captured_at_utc": "2026-09-04T18:22:47Z",
+  "advisory_only": true,
+  "sources": [
+    {"id": "microsoft-ad-best-practices", "publisher": "Microsoft", "tier": "Tier 1", "version_note": "Windows Server 2016-2025; page last updated 2025-05-21", "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory"},
+    {"id": "microsoft-group-policy-processing", "publisher": "Microsoft", "tier": "Tier 1", "version_note": "Windows Server 2016-2025; page last updated 2025-06-16", "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-policy/group-policy-processing"},
+    {"id": "microsoft-windows-security-baselines", "publisher": "Microsoft", "tier": "Tier 1", "version_note": "Page last updated 2025-08-18; product coverage is version-specific", "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines"},
+    {"id": "microsoft-security-compliance-toolkit", "publisher": "Microsoft", "tier": "Tier 1", "version_note": "SCT and release-specific baseline/tool capture", "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10"},
+    {"id": "microsoft-server-2025-osconfig-baseline", "publisher": "Microsoft", "tier": "Tier 1", "version_note": "Windows Server 2025 only; OSConfig does not support earlier Windows Server versions", "url": "https://learn.microsoft.com/en-us/windows-server/security/osconfig/osconfig-how-to-configure-security-baselines"},
+    {"id": "microsoft-audit-policy", "publisher": "Microsoft", "tier": "Tier 1", "version_note": "Starting-point audit recommendations; test and tailor", "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/audit-policy-recommendations"},
+    {"id": "microsoft-windows-event-forwarding", "publisher": "Microsoft", "tier": "Tier 1", "version_note": "WEF architecture and intrusion-detection guidance", "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/use-windows-event-forwarding-to-assist-in-intrusion-detection"},
+    {"id": "microsoft-ldap-signing", "publisher": "Microsoft", "tier": "Tier 1", "version_note": "Windows Server 2016-2025; signing/channel-binding defaults vary by release and deployment", "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/ldap-signing"},
+    {"id": "microsoft-smb-security-hardening", "publisher": "Microsoft", "tier": "Tier 1", "version_note": "Windows 11 24H2 and Windows Server 2025 behavior called out separately; compare with SMB signing matrix", "url": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-security-hardening"},
+    {"id": "microsoft-smb-signing-control", "publisher": "Microsoft", "tier": "Tier 1", "version_note": "Separate policy/control page; its version matrix differs on Server 2025 directionality", "url": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-signing"},
+    {"id": "nist-sp-800-92", "publisher": "NIST", "tier": "Tier 1", "version_note": "Final 2006-09-13; high-level log-management guidance", "url": "https://csrc.nist.gov/pubs/sp/800/92/final"},
+    {"id": "nist-sp-800-53-53b", "publisher": "NIST", "tier": "Tier 1", "version_note": "SP 800-53 Rev. 5 and SP 800-53B with later release notices; use page-specific version metadata", "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"},
+    {"id": "nist-sp-800-63-4", "publisher": "NIST", "tier": "Tier 1", "version_note": "Final published July 2025; supersedes SP 800-63-3", "url": "https://csrc.nist.gov/pubs/sp/800/63/4/final"},
+    {"id": "cis-windows-server-benchmarks", "publisher": "CIS", "tier": "Tier 1", "version_note": "Listing captured 2026-09-04; versions differ by Windows Server release and artifact", "url": "https://www.cisecurity.org/benchmark/microsoft_windows_server"},
+    {"id": "mitre-attack-enterprise", "publisher": "MITRE ATT&CK", "tier": "Tier 1", "version_note": "Live technique pages captured 2026-09-04; verify version before reuse", "url": "https://attack.mitre.org/"}
+  ]
+}
