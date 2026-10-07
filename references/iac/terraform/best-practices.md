@@ -31,7 +31,7 @@ Modern IaC platforms organize configurations into composable root modules and re
 ### Recommended Repository Layout
 
 ```text
-ai-router-infra/
+sample-service-infra/
 ├── .github/
 │   └── workflows/
 │       ├── terraform-plan.yml
@@ -203,12 +203,12 @@ Consistent tagging is essential for cost allocation, access control (ABAC), oper
 | Tag Key | Format / Allowed Values | Purpose | Example |
 | --- | --- | --- | --- |
 | `Environment` | `dev` \| `stage` \| `prod` \| `sandbox` | Environment classification | `prod` |
-| `Owner` | Team email or Slack channel | Operational and incident escalation | `platform-eng@company.internal` |
+| `Owner` | Team email or Slack channel | Operational and incident escalation | `platform-eng@example.com` |
 | `ManagedBy` | `terraform` \| `opentofu` | Automation control plane marker | `terraform` |
 | `CostCenter` | Valid ERP / accounting code | Financial chargeback and FinOps | `cc-4820-platform` |
-| `Project` | Lowercase kebab-case identifier | Application / System grouping | `ai-router` |
+| `Project` | Lowercase kebab-case identifier | Application / System grouping | `sample-service` |
 | `DataClassification` | `public` \| `internal` \| `confidential` \| `restricted` | Data sensitivity perimeter | `confidential` |
-| `Repository` | GitHub org and repo name | Source code traceability | `Koality-Assured/ai-router` |
+| `Repository` | GitHub org and repo name | Source code traceability | `example-org/sample-service` |
 
 ### Automated Tag Propagation via `default_tags`
 
@@ -224,9 +224,9 @@ provider "aws" {
       Owner              = var.team_owner
       ManagedBy          = "terraform"
       CostCenter         = var.cost_center
-      Project            = "ai-router"
+      Project            = "sample-service"
       DataClassification = var.data_classification
-      Repository         = "Koality-Assured/ai-router"
+      Repository         = "example-org/sample-service"
     }
   }
 }
@@ -238,7 +238,7 @@ When individual resources require supplementary tags (e.g., `Name`, `Tier`, `Bac
 
 ```hcl
 resource "aws_s3_bucket" "audit_logs" {
-  bucket = "${var.environment}-ai-router-audit-logs"
+  bucket = "${var.environment}-sample-service-audit-logs"
 
   tags = {
     Name           = "${var.environment}-audit-logs"

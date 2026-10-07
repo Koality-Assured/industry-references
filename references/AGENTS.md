@@ -43,4 +43,5 @@ Ingest simply; do not duplicate skills or paste root Critical — link [`../AGEN
 | `governance-privacy/` | Enterprise ISMS, privacy, GDPR, ISO/IEC 27001, SOC 2, CCPA/CPRA |
 | `iac/` | Infrastructure as Code (Terraform / OpenTofu, AWS baselines, backend security, provider conventions) |
 | `windows-security/` | Defensive Active Directory, Group Policy/SYSVOL, Windows baselines, auditing, and identity protocol hardening |
+| `us-law/` | United States primary law locators (federal, state, DC): structure and official publishers, advisory only |
 
