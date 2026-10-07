@@ -2,7 +2,7 @@
 
 Point-in-time locators and structural summaries of official United States primary law. Advisory only. Not legal advice.
 
-Agent rules: [`AGENTS.md`](./AGENTS.md). Use standard: [`../../docs/standards/us-law-reference-use.md`](../../docs/standards/us-law-reference-use.md).
+Agent rules: [`AGENTS.md`](./AGENTS.md). These pages are advisory locators, not legal advice or a substitute for current official sources. Verify any legal use against the official publisher and follow local legal-review requirements.
 
 | Path | What it holds |
 | --- | --- |

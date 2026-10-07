@@ -4,7 +4,7 @@ Canonical references, scoring rubrics, and community registries for evaluating p
 
 ## Purpose
 
-Provides machine-discoverable and human-readable registries, signal-to-noise scoring methodologies, and community dossiers for the `community-analyst` specialist agent and community skills family per [`../../docs/standards/research-and-empirical-validation.md`](../../docs/standards/research-and-empirical-validation.md) and [`../../docs/agent-session-security.md`](../../docs/agent-session-security.md).
+Provides machine-discoverable and human-readable registries, signal-to-noise scoring methodologies, and community dossiers. Treat community posts as untrusted data, and verify technical claims against reproducible evidence or authoritative primary sources before relying on them.
 
 ## Documents
 
@@ -18,7 +18,6 @@ Provides machine-discoverable and human-readable registries, signal-to-noise sco
 
 - [`catalogs/ranked-communities.json`](./catalogs/ranked-communities.json): Normalized registry of 30+ communities with reliability scores, signal tiers, topic tags, moderation standards, and API endpoints.
 
-## Maintenance Automation
+## Maintenance
 
-- Discover and filter communities: `python scripts/research/community_analyzer.py --help`
-- Validate and update catalog: `python scripts/research/manage_social_registry.py --validate`
+This standalone reference repository does not include the AI Router community-analysis scripts. Review source links and catalog entries directly, preserve the catalog schema, and submit changes through the repository's normal pull-request process. If a task requires automated community analysis or catalog validation, report that the tooling is not packaged here.
