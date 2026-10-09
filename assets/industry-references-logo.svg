@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%" role="img" aria-label="Koality-Assured Industry References Logo">
+  <defs>
+    <!-- Background Canvas Gradient -->
+    <radialGradient id="logoBgGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#090E1A" />
+      <stop offset="100%" stop-color="#04060B" />
+    </radialGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="logoBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#F59E0B" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#10B981" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Emerald Primary Gradients -->
+    <linearGradient id="emeraldPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6EE7B7" />
+      <stop offset="40%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <linearGradient id="emeraldDeep" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#065F46" />
+      <stop offset="100%" stop-color="#022C22" />
+    </linearGradient>
+
+    <!-- Bronze Gold Gradients -->
+    <linearGradient id="goldPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="35%" stop-color="#F59E0B" />
+      <stop offset="75%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+
+    <linearGradient id="bronzeMetallic" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="50%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+
+    <!-- Architectural Stone Gradients -->
+    <linearGradient id="pillarShaftGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="25%" stop-color="#334155" />
+      <stop offset="65%" stop-color="#475569" />
+      <stop offset="90%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <linearGradient id="pillarAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <linearGradient id="pedimentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="60%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Ambient Glows -->
+    <radialGradient id="emeraldAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#059669" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="goldAura" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.30" />
+      <stop offset="65%" stop-color="#B45309" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Drop Shadows & Glow Filters -->
+    <filter id="sealBloom" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="16" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtleShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Squircle Container -->
+  <rect x="12" y="12" width="488" height="488" rx="108" fill="url(#logoBgGrad)" stroke="url(#logoBorderGrad)" stroke-width="4" filter="url(#subtleShadow)" />
+
+  <!-- Ambient Light Backdrops -->
+  <circle cx="256" cy="256" r="190" fill="url(#emeraldAura)" />
+  <circle cx="256" cy="256" r="130" fill="url(#goldAura)" />
+
+  <!-- Background Registry Geometry & Coordinates Grid -->
+  <g opacity="0.12" stroke="#64748B" stroke-width="1">
+    <circle cx="256" cy="256" r="215" fill="none" stroke-dasharray="4 6" />
+    <circle cx="256" cy="256" r="170" fill="none" stroke-dasharray="2 4" />
+    <line x1="256" y1="40" x2="256" y2="472" stroke-dasharray="3 5" />
+    <line x1="40" y1="256" x2="472" y2="256" stroke-dasharray="3 5" />
+    <line x1="104" y1="104" x2="408" y2="408" stroke-dasharray="2 6" />
+    <line x1="104" y1="408" x2="408" y2="104" stroke-dasharray="2 6" />
+  </g>
+
+  <!-- ARCHITECTURAL FOUNDATION (Pillars & Pediment) -->
+  <g id="architectural-framework" filter="url(#subtleShadow)">
+    <!-- Base Stylobate (Foundation Steps) -->
+    <!-- Bottom Step -->
+    <rect x="88" y="416" width="336" height="14" rx="4" fill="#0F172A" stroke="url(#goldPrimary)" stroke-width="1.5" />
+    <!-- Middle Step -->
+    <rect x="104" y="402" width="304" height="14" rx="3" fill="#1E293B" stroke="#475569" stroke-width="1" />
+    <!-- Top Step / Stylobate -->
+    <rect x="120" y="388" width="272" height="14" rx="2" fill="#334155" stroke="url(#emeraldPrimary)" stroke-width="1.5" />
+
+    <!-- Left Pillar Base & Shaft -->
+    <rect x="136" y="374" width="48" height="14" rx="2" fill="url(#bronzeMetallic)" />
+    <rect x="140" y="146" width="40" height="228" rx="2" fill="url(#pillarShaftGrad)" stroke="#1E293B" stroke-width="1" />
+    <!-- Left Pillar Fluting -->
+    <line x1="147" y1="152" x2="147" y2="368" stroke="url(#emeraldPrimary)" stroke-width="1.5" opacity="0.75" />
+    <line x1="154" y1="150" x2="154" y2="370" stroke="#E2E8F0" stroke-width="1.5" opacity="0.4" />
+    <line x1="160" y1="148" x2="160" y2="372" stroke="url(#goldPrimary)" stroke-width="1.5" opacity="0.85" />
+    <line x1="166" y1="150" x2="166" y2="370" stroke="#E2E8F0" stroke-width="1.5" opacity="0.4" />
+    <line x1="173" y1="152" x2="173" y2="368" stroke="url(#emeraldPrimary)" stroke-width="1.5" opacity="0.75" />
+    <!-- Left Pillar Capital -->
+    <rect x="134" y="132" width="52" height="14" rx="3" fill="url(#bronzeMetallic)" stroke="url(#goldPrimary)" stroke-width="1" />
+    <circle cx="140" cy="139" r="4" fill="#FDE68A" />
+    <circle cx="180" cy="139" r="4" fill="#FDE68A" />
+
+    <!-- Right Pillar Base & Shaft -->
+    <rect x="328" y="374" width="48" height="14" rx="2" fill="url(#bronzeMetallic)" />
+    <rect x="332" y="146" width="40" height="228" rx="2" fill="url(#pillarShaftGrad)" stroke="#1E293B" stroke-width="1" />
+    <!-- Right Pillar Fluting -->
+    <line x1="339" y1="152" x2="339" y2="368" stroke="url(#emeraldPrimary)" stroke-width="1.5" opacity="0.75" />
+    <line x1="346" y1="150" x2="346" y2="370" stroke="#E2E8F0" stroke-width="1.5" opacity="0.4" />
+    <line x1="352" y1="148" x2="352" y2="372" stroke="url(#goldPrimary)" stroke-width="1.5" opacity="0.85" />
+    <line x1="358" y1="150" x2="358" y2="370" stroke="#E2E8F0" stroke-width="1.5" opacity="0.4" />
+    <line x1="365" y1="152" x2="365" y2="368" stroke="url(#emeraldPrimary)" stroke-width="1.5" opacity="0.75" />
+    <!-- Right Pillar Capital -->
+    <rect x="326" y="132" width="52" height="14" rx="3" fill="url(#bronzeMetallic)" stroke="url(#goldPrimary)" stroke-width="1" />
+    <circle cx="332" cy="139" r="4" fill="#FDE68A" />
+    <circle cx="372" cy="139" r="4" fill="#FDE68A" />
+
+    <!-- Entablature / Architrave & Frieze -->
+    <rect x="114" y="118" width="284" height="14" rx="2" fill="url(#pedimentGrad)" stroke="#475569" stroke-width="1" />
+    <rect x="122" y="106" width="268" height="12" fill="#0F172A" stroke="url(#goldPrimary)" stroke-width="1" />
+
+    <!-- Classical Pediment (Tympanum & Cornice) -->
+    <polygon points="256,52 112,106 400,106" fill="url(#pedimentGrad)" stroke="url(#goldPrimary)" stroke-width="2.5" />
+    <!-- Inset Pediment Relief -->
+    <polygon points="256,66 136,101 376,101" fill="#090E1A" stroke="url(#emeraldPrimary)" stroke-width="1" />
+
+    <!-- Pediment Apex Keystone Emblem -->
+    <circle cx="256" cy="86" r="10" fill="url(#goldPrimary)" stroke="#FDE68A" stroke-width="1.5" />
+    <polygon points="256,79 258,84 263,84 259,88 261,93 256,90 251,93 253,88 249,84 254,84" fill="#0B101D" />
+  </g>
+
+  <!-- CENTRAL CRYPTOGRAPHIC COMPLIANCE SEAL -->
+  <g id="cryptographic-seal" transform="translate(256, 256)">
+    <!-- Outer Starburst Registry Cogs / Notches (16 facets) -->
+    <g stroke="url(#goldPrimary)" stroke-width="2" fill="#0E172A">
+      <path d="M 0 -108 L 14 -102 L 28 -104 L 40 -94 L 56 -92 L 67 -78 L 81 -71 L 89 -55 L 100 -43 L 103 -27 L 109 -10 L 107 7 L 108 24 L 100 40 L 96 57 L 83 70 L 73 84 L 57 93 L 43 103 L 26 107 L 9 111 L -9 111 L -26 107 L -43 103 L -57 93 L -73 84 L -83 70 L -96 57 L -100 40 L -108 24 L -107 7 L -109 -10 L -103 -27 L -100 -43 L -89 -55 L -81 -71 L -67 -78 L -56 -92 L -40 -94 L -28 -104 L -14 -102 Z" />
+    </g>
+
+    <!-- Concentric Guilloche / Ring Borders -->
+    <circle cx="0" cy="0" r="96" fill="none" stroke="url(#goldPrimary)" stroke-width="3" />
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#FDE68A" stroke-width="1" stroke-dasharray="3 3" />
+    <circle cx="0" cy="0" r="82" fill="url(#emeraldDeep)" stroke="url(#emeraldPrimary)" stroke-width="2.5" />
+
+    <!-- Radial Metric Nodes in Ring -->
+    <g fill="url(#goldPrimary)">
+      <circle cx="0" cy="-86" r="3.5" />
+      <circle cx="61" cy="-61" r="3.5" />
+      <circle cx="86" cy="0" r="3.5" />
+      <circle cx="61" cy="61" r="3.5" />
+      <circle cx="0" cy="86" r="3.5" />
+      <circle cx="-61" cy="61" r="3.5" />
+      <circle cx="-86" cy="0" r="3.5" />
+      <circle cx="-61" cy="-61" r="3.5" />
+    </g>
+
+    <!-- Inner Seal Disc Canvas -->
+    <circle cx="0" cy="0" r="74" fill="#0A1120" stroke="url(#emeraldPrimary)" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="70" fill="url(#emeraldAura)" />
+
+    <!-- NORMALIZED FRAMEWORK LIBRARY EMBLEM (Open Codex + Shield) -->
+    <!-- Heraldic Shield Base -->
+    <path d="M -48 -44 L 48 -44 C 48 -15 42 36 0 54 C -42 36 -48 -15 -48 -44 Z" fill="#0F172A" stroke="url(#goldPrimary)" stroke-width="2" />
+
+    <!-- Open Codex / Reference Ledger Folio -->
+    <g transform="translate(0, -6)">
+      <!-- Left Page -->
+      <path d="M -36 -24 C -22 -28 -8 -25 0 -20 L 0 28 C -8 23 -22 20 -36 24 Z" fill="#1E293B" stroke="url(#emeraldPrimary)" stroke-width="1.5" />
+      <!-- Right Page -->
+      <path d="M 36 -24 C 22 -28 8 -25 0 -20 L 0 28 C 8 23 22 20 36 24 Z" fill="#1E293B" stroke="url(#emeraldPrimary)" stroke-width="1.5" />
+
+      <!-- Left Page Normalized Schema Rows -->
+      <line x1="-28" y1="-14" x2="-8" y2="-12" stroke="#6EE7B7" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="-30" y1="-5" x2="-8" y2="-3" stroke="#FDE68A" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="-28" y1="4" x2="-10" y2="6" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="-30" y1="13" x2="-12" y2="15" stroke="#6EE7B7" stroke-width="1.5" stroke-linecap="round" />
+
+      <!-- Right Page Normalized Schema Rows -->
+      <line x1="8" y1="-12" x2="28" y2="-14" stroke="#FDE68A" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="8" y1="-3" x2="30" y2="-5" stroke="#6EE7B7" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="10" y1="6" x2="28" y2="4" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="12" y1="15" x2="30" y2="13" stroke="#FDE68A" stroke-width="1.5" stroke-linecap="round" />
+
+      <!-- Book Spine Ribbon / Center Seam -->
+      <line x1="0" y1="-20" x2="0" y2="34" stroke="url(#goldPrimary)" stroke-width="2.5" />
+      <!-- Book Bookmark Ribbon Tail -->
+      <polygon points="0,32 -5,44 0,40 5,44" fill="url(#goldPrimary)" />
+    </g>
+
+    <!-- Cryptographic Verification Seal Star (Overlaid Center Apex) -->
+    <g transform="translate(0, -32)" filter="url(#sealBloom)">
+      <polygon points="0,-16 4,-5 16,-5 7,2 10,14 0,7 -10,14 -7,2 -16,-5 -4,-5" fill="url(#goldPrimary)" stroke="#FFFBEB" stroke-width="1" />
+      <circle cx="0" cy="0" r="3" fill="#047857" />
+    </g>
+
+    <!-- Cryptographic Keyhole in Shield Footer -->
+    <g transform="translate(0, 32)">
+      <circle cx="0" cy="0" r="4.5" fill="url(#goldPrimary)" />
+      <polygon points="-2.5,2 2.5,2 3.5,8 -3.5,8" fill="url(#goldPrimary)" />
+    </g>
+  </g>
+
+  <!-- LOWER NORMALIZED FRAMEWORK CATALOG TABLETS -->
+  <g id="normalized-catalogs" transform="translate(256, 420)">
+    <!-- Central Registry Plaque -->
+    <rect x="-84" y="-12" width="168" height="24" rx="6" fill="#090E1A" stroke="url(#goldPrimary)" stroke-width="2" />
+    <text x="0" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#F8FAFC" letter-spacing="1.5" text-anchor="middle">VERIFIED REGISTRY</text>
+    <!-- Left & Right Gold Accents -->
+    <circle cx="-74" cy="0" r="2.5" fill="#F59E0B" />
+    <circle cx="74" cy="0" r="2.5" fill="#F59E0B" />
+  </g>
+</svg>

@@ -1,0 +1,348 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="100%" height="auto" role="img" aria-label="Koality-Assured Industry References Hero Banner">
+  <defs>
+    <!-- Banner Canvas Gradient -->
+    <linearGradient id="bannerBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913" />
+      <stop offset="35%" stop-color="#0B1120" />
+      <stop offset="70%" stop-color="#0E172A" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="bannerBorderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#34D399" stop-opacity="0.9" />
+      <stop offset="65%" stop-color="#F59E0B" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Emerald Primary Gradients -->
+    <linearGradient id="bannerEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6EE7B7" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Bronze Gold Gradients -->
+    <linearGradient id="bannerGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="40%" stop-color="#F59E0B" />
+      <stop offset="85%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+
+    <linearGradient id="goldVertical" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+
+    <!-- Title Platinum Gradient -->
+    <linearGradient id="bannerTitle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="65%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+
+    <!-- Dark Architectural Slab -->
+    <linearGradient id="slabGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Ambient Aura Radial Gradients -->
+    <radialGradient id="leftAmbientAura" cx="20%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.16" />
+      <stop offset="50%" stop-color="#059669" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="rightAmbientAura" cx="78%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.18" />
+      <stop offset="40%" stop-color="#10B981" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="bloomGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="bannerShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <style>
+      .over-title {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 3.5px;
+        fill: #F59E0B;
+      }
+      .main-title {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+        font-size: 48px;
+        font-weight: 800;
+        letter-spacing: -0.6px;
+      }
+      .sub-title {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+        font-size: 19px;
+        font-weight: 500;
+        fill: #E2E8F0;
+        letter-spacing: 0.1px;
+      }
+      .body-desc {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+        font-size: 14.5px;
+        font-weight: 400;
+        fill: #94A3B8;
+        line-height: 1.5;
+      }
+      .pill-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+      }
+      .card-title {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 11.5px;
+        font-weight: 700;
+      }
+      .card-meta {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        fill: #94A3B8;
+      }
+    </style>
+  </defs>
+
+  <!-- Banner Outer Shell -->
+  <rect width="1280" height="420" rx="20" fill="url(#bannerBgGrad)" stroke="url(#bannerBorderGrad)" stroke-width="2.5" />
+
+  <!-- Ambient Light Zones -->
+  <rect width="1280" height="420" rx="20" fill="url(#leftAmbientAura)" />
+  <rect width="1280" height="420" rx="20" fill="url(#rightAmbientAura)" />
+
+  <!-- Architectural Background Grid & Horizon -->
+  <g opacity="0.10" stroke="#64748B" stroke-width="1">
+    <line x1="0" y1="105" x2="1280" y2="105" />
+    <line x1="0" y1="210" x2="1280" y2="210" />
+    <line x1="0" y1="315" x2="1280" y2="315" />
+    <line x1="180" y1="0" x2="180" y2="420" stroke-dasharray="4 4" />
+    <line x1="420" y1="0" x2="420" y2="420" stroke-dasharray="4 4" />
+    <line x1="680" y1="0" x2="680" y2="420" stroke-dasharray="4 4" />
+    <line x1="920" y1="0" x2="920" y2="420" stroke-dasharray="4 4" />
+    <line x1="1160" y1="0" x2="1160" y2="420" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- LEFT BRANDING & METADATA COLUMN -->
+  <g transform="translate(68, 54)">
+    <!-- Overline Category Tag -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="22" height="18" rx="4" fill="#0A1120" stroke="url(#bannerGold)" stroke-width="1.2" />
+      <polygon points="11,4 13,8 17,8 14,11 15,15 11,13 7,15 8,11 5,8 9,8" fill="#F59E0B" />
+      <text x="32" y="14" class="over-title">KOALITY-ASSURED ENGINEERING</text>
+    </g>
+
+    <!-- Main Title -->
+    <g transform="translate(0, 48)">
+      <text class="main-title">
+        <tspan fill="url(#bannerTitle)">INDUSTRY </tspan>
+        <tspan fill="url(#bannerEmerald)">REFERENCES</tspan>
+      </text>
+    </g>
+
+    <!-- Subtitle -->
+    <text x="0" y="94" class="sub-title">
+      Normalized, Machine-Readable Catalogs, Mappings &amp; Practitioner Guides
+    </text>
+
+    <!-- Detailed Mission Statement Paragraph -->
+    <text x="0" y="128" class="body-desc">
+      Authoritative compliance registry &amp; structured reference schemas for autonomous AI agents,
+    </text>
+    <text x="0" y="148" class="body-desc">
+      cybersecurity defense posture, statutory legal frameworks, and software architectures.
+    </text>
+
+    <!-- Feature Tags / Framework Badges -->
+    <g transform="translate(0, 182)">
+      <!-- Badge 1: OWASP -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="134" height="28" rx="6" fill="#0B132B" stroke="#059669" stroke-width="1.2" />
+        <circle cx="12" cy="14" r="3.5" fill="#34D399" />
+        <text x="24" y="18" class="pill-text" fill="#34D399">OWASP TOP 10</text>
+      </g>
+
+      <!-- Badge 2: MITRE ATT&CK -->
+      <g transform="translate(142, 0)">
+        <rect x="0" y="0" width="156" height="28" rx="6" fill="#0B132B" stroke="#D97706" stroke-width="1.2" />
+        <circle cx="12" cy="14" r="3.5" fill="#FBBF24" />
+        <text x="24" y="18" class="pill-text" fill="#FBBF24">MITRE ATT&amp;CK / ATLAS</text>
+      </g>
+
+      <!-- Badge 3: NIST CSF & AI RMF -->
+      <g transform="translate(306, 0)">
+        <rect x="0" y="0" width="176" height="28" rx="6" fill="#0B132B" stroke="#059669" stroke-width="1.2" />
+        <circle cx="12" cy="14" r="3.5" fill="#34D399" />
+        <text x="24" y="18" class="pill-text" fill="#34D399">NIST CSF 2.0 &amp; AI RMF</text>
+      </g>
+
+      <!-- Row 2 of Badges -->
+      <!-- Badge 4: CWE Top 25 -->
+      <g transform="translate(0, 36)">
+        <rect x="0" y="0" width="120" height="28" rx="6" fill="#0B132B" stroke="#D97706" stroke-width="1.2" />
+        <circle cx="12" cy="14" r="3.5" fill="#FBBF24" />
+        <text x="24" y="18" class="pill-text" fill="#FBBF24">CWE TOP 25</text>
+      </g>
+
+      <!-- Badge 5: CIS Controls v8.1 -->
+      <g transform="translate(128, 36)">
+        <rect x="0" y="0" width="154" height="28" rx="6" fill="#0B132B" stroke="#059669" stroke-width="1.2" />
+        <circle cx="12" cy="14" r="3.5" fill="#34D399" />
+        <text x="24" y="18" class="pill-text" fill="#34D399">CIS CONTROLS v8.1</text>
+      </g>
+
+      <!-- Badge 6: Conventional Commits -->
+      <g transform="translate(290, 36)">
+        <rect x="0" y="0" width="192" height="28" rx="6" fill="#0B132B" stroke="#D97706" stroke-width="1.2" />
+        <circle cx="12" cy="14" r="3.5" fill="#FBBF24" />
+        <text x="24" y="18" class="pill-text" fill="#FBBF24">CONVENTIONAL COMMITS</text>
+      </g>
+    </g>
+
+    <!-- Bottom Specs Metadata Line -->
+    <g transform="translate(0, 276)">
+      <text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11.5" fill="#64748B">
+        <tspan fill="#34D399">78+</tspan> Validated Catalogs  •  <tspan fill="#F59E0B">100%</tspan> Schema Conformance  •  <tspan fill="#38BDF8">JSON / YAML / Markdown</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- RIGHT ARCHITECTURAL PILLARS & REGISTRY VISUALIZATION -->
+  <g id="right-monument" transform="translate(710, 40)" filter="url(#bannerShadow)">
+    <!-- Monument Backdrop Subtle Hexagonal Matrix -->
+    <g opacity="0.18" stroke="#334155" stroke-width="1">
+      <polygon points="260,30 330,70 330,150 260,190 190,150 190,70" fill="none" />
+      <polygon points="400,110 470,150 470,230 400,270 330,230 330,150" fill="none" />
+      <polygon points="120,110 190,150 190,230 120,270 50,230 50,150" fill="none" />
+    </g>
+
+    <!-- Classical Architectural Portico Frame -->
+    <!-- Stylobate Base Step -->
+    <rect x="20" y="318" width="480" height="16" rx="4" fill="#0A0F1D" stroke="url(#bannerGold)" stroke-width="1.5" />
+    <rect x="40" y="304" width="440" height="14" rx="2" fill="#1E293B" stroke="#475569" stroke-width="1" />
+
+    <!-- Left Classical Column -->
+    <rect x="60" y="80" width="32" height="224" rx="2" fill="url(#slabGrad)" stroke="#334155" stroke-width="1" />
+    <line x1="68" y1="84" x2="68" y2="300" stroke="#10B981" stroke-width="1.5" opacity="0.6" />
+    <line x1="76" y1="84" x2="76" y2="300" stroke="#F59E0B" stroke-width="1.5" opacity="0.7" />
+    <line x1="84" y1="84" x2="84" y2="300" stroke="#10B981" stroke-width="1.5" opacity="0.6" />
+    <!-- Column Capital & Base -->
+    <rect x="54" y="68" width="44" height="12" rx="2" fill="url(#goldVertical)" />
+    <rect x="56" y="294" width="40" height="10" rx="2" fill="url(#goldVertical)" />
+
+    <!-- Right Classical Column -->
+    <rect x="428" y="80" width="32" height="224" rx="2" fill="url(#slabGrad)" stroke="#334155" stroke-width="1" />
+    <line x1="436" y1="84" x2="436" y2="300" stroke="#10B981" stroke-width="1.5" opacity="0.6" />
+    <line x1="444" y1="84" x2="444" y2="300" stroke="#F59E0B" stroke-width="1.5" opacity="0.7" />
+    <line x1="452" y1="84" x2="452" y2="300" stroke="#10B981" stroke-width="1.5" opacity="0.6" />
+    <!-- Column Capital & Base -->
+    <rect x="422" y="68" width="44" height="12" rx="2" fill="url(#goldVertical)" />
+    <rect x="424" y="294" width="40" height="10" rx="2" fill="url(#goldVertical)" />
+
+    <!-- Top Architrave & Pediment -->
+    <rect x="44" y="54" width="432" height="14" rx="2" fill="#1E293B" stroke="url(#bannerGold)" stroke-width="1.2" />
+    <polygon points="260,6 40,54 480,54" fill="url(#slabGrad)" stroke="url(#bannerGold)" stroke-width="2" />
+    <polygon points="260,18 64,50 456,50" fill="#0A0F1D" stroke="url(#bannerEmerald)" stroke-width="1" />
+
+    <!-- Pediment Core Star Seal -->
+    <circle cx="260" cy="34" r="8" fill="url(#bannerGold)" />
+    <polygon points="260,28 262,32 266,32 263,35 264,39 260,37 256,39 257,35 254,32 258,32" fill="#0A0F1D" />
+
+    <!-- FLOATING NORMALIZED CATALOG VOLUMES / SCHEMA CARDS -->
+
+    <!-- Card 1: NIST CSF 2.0 Core (Left-Center) -->
+    <g transform="translate(112, 90)">
+      <rect x="0" y="0" width="180" height="66" rx="8" fill="#0F172A" stroke="#059669" stroke-width="1.5" />
+      <rect x="0" y="0" width="180" height="20" rx="8" fill="#064E3B" opacity="0.5" />
+      <!-- Status pip -->
+      <circle cx="12" cy="10" r="3.5" fill="#34D399" />
+      <text x="22" y="14" class="card-title" fill="#6EE7B7">nist-csf-2.0.json</text>
+      <!-- Content Preview -->
+      <text x="12" y="35" class="card-meta">Core: GOVERN, PROTECT</text>
+      <text x="12" y="50" class="card-meta">Categories: GV.OC, PR.DS</text>
+      <rect x="136" y="40" width="34" height="16" rx="4" fill="#047857" />
+      <text x="153" y="51" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#ECFDF5" text-anchor="middle">v2.0</text>
+    </g>
+
+    <!-- Card 2: MITRE ATT&CK Matrix (Right-Center) -->
+    <g transform="translate(236, 172)">
+      <rect x="0" y="0" width="180" height="66" rx="8" fill="#0F172A" stroke="#D97706" stroke-width="1.5" />
+      <rect x="0" y="0" width="180" height="20" rx="8" fill="#78350F" opacity="0.5" />
+      <!-- Status pip -->
+      <circle cx="12" cy="10" r="3.5" fill="#FBBF24" />
+      <text x="22" y="14" class="card-title" fill="#FDE68A">mitre-attack-19.1.json</text>
+      <!-- Content Preview -->
+      <text x="12" y="35" class="card-meta">Tactics: TA0001 - TA0040</text>
+      <text x="12" y="50" class="card-meta">Enterprise Techniques: 600+</text>
+      <rect x="132" y="40" width="38" height="16" rx="4" fill="#B45309" />
+      <text x="151" y="51" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#FFFBEB" text-anchor="middle">v19.1</text>
+    </g>
+
+    <!-- Card 3: OWASP Agentic Top 10 (Bottom-Center) -->
+    <g transform="translate(132, 246)">
+      <rect x="0" y="0" width="200" height="54" rx="8" fill="#0B1324" stroke="url(#bannerEmerald)" stroke-width="1.5" />
+      <circle cx="12" cy="12" r="3.5" fill="#34D399" />
+      <text x="22" y="16" class="card-title" fill="#6EE7B7">owasp-agentic-2026.json</text>
+      <text x="12" y="36" class="card-meta">ASI-01 Prompt Inversion • ASI-02</text>
+      <rect x="152" y="28" width="38" height="16" rx="4" fill="#065F46" />
+      <text x="171" y="39" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#ECFDF5" text-anchor="middle">2026</text>
+    </g>
+
+    <!-- CENTRAL COMPLIANCE MEDALLION / CRYPTOGRAPHIC SEAL -->
+    <g transform="translate(260, 185)" filter="url(#bloomGlow)">
+      <!-- Outer Notched Seal Ring -->
+      <circle cx="0" cy="0" r="46" fill="#0A0F1D" stroke="url(#bannerGold)" stroke-width="2.5" />
+      <circle cx="0" cy="0" r="41" fill="none" stroke="#FDE68A" stroke-width="1" stroke-dasharray="2 3" />
+      <circle cx="0" cy="0" r="36" fill="#064E3B" stroke="#34D399" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="32" fill="#0F172A" />
+
+      <!-- Seal Heraldic Codex Folio -->
+      <g transform="translate(0, -3)">
+        <!-- Left Folio Page -->
+        <path d="M -16 -10 C -10 -12 -4 -11 0 -8 L 0 14 C -4 11 -10 10 -16 12 Z" fill="#1E293B" stroke="#34D399" stroke-width="1" />
+        <!-- Right Folio Page -->
+        <path d="M 16 -10 C 10 -12 4 -11 0 -8 L 0 14 C 4 11 10 10 16 12 Z" fill="#1E293B" stroke="#34D399" stroke-width="1" />
+        <!-- Gold Spine -->
+        <line x1="0" y1="-8" x2="0" y2="16" stroke="url(#bannerGold)" stroke-width="1.8" />
+        <polygon points="0,15 -3,21 0,19 3,21" fill="url(#bannerGold)" />
+      </g>
+
+      <!-- Center Star of Cryptographic Verification -->
+      <polygon points="0,-22 2,-16 8,-16 3,-12 5,-6 0,-10 -5,-6 -3,-12 -8,-16 -2,-16" fill="url(#bannerGold)" />
+      <!-- Radial Seal Micro Nodes -->
+      <circle cx="0" cy="-38" r="2" fill="#FDE68A" />
+      <circle cx="27" cy="-27" r="2" fill="#34D399" />
+      <circle cx="38" cy="0" r="2" fill="#FDE68A" />
+      <circle cx="27" cy="27" r="2" fill="#34D399" />
+      <circle cx="0" cy="38" r="2" fill="#FDE68A" />
+      <circle cx="-27" cy="27" r="2" fill="#34D399" />
+      <circle cx="-38" cy="0" r="2" fill="#FDE68A" />
+      <circle cx="-27" cy="-27" r="2" fill="#34D399" />
+    </g>
+
+    <!-- Circuit Trace Lines Interconnecting Components -->
+    <path d="M 92 120 L 112 120" stroke="#34D399" stroke-width="1.5" stroke-dasharray="2 2" />
+    <path d="M 214 218 L 236 218" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="2 2" />
+    <path d="M 260 231 L 260 246" stroke="#34D399" stroke-width="1.5" stroke-dasharray="2 2" />
+  </g>
+</svg>
