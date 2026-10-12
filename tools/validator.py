@@ -6,14 +6,36 @@ import argparse
 import json
 import sys
 from pathlib import Path
+import jsonschema
 
 
-def validate_catalog_json(path: Path) -> list[str]:
+def validate_catalog_json(path: Path, root: Path) -> list[str]:
     errors = []
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(data, (dict, list)):
             errors.append(f"{path.name}: JSON root must be an object or array")
+            return errors
+        
+        schema_path = None
+        schemas_dir = root / "schemas"
+        if path.name == "jurisdictions.json":
+            schema_path = schemas_dir / "jurisdictions.schema.json"
+        elif path.name == "authoritative-domains.json":
+            schema_path = schemas_dir / "authoritative-domains.schema.json"
+        elif path.name == "mitre-ad-techniques.json":
+            schema_path = schemas_dir / "mitre-ad-techniques.schema.json"
+        elif path.name == "windows-security-sources.json":
+            schema_path = schemas_dir / "windows-security-sources.schema.json"
+        elif "us-law" in str(path):
+            schema_path = schemas_dir / "federal_state.schema.json"
+            
+        if schema_path and schema_path.exists():
+            schema = json.loads(schema_path.read_text(encoding="utf-8"))
+            jsonschema.validate(instance=data, schema=schema)
+            
+    except jsonschema.exceptions.ValidationError as e:
+        errors.append(f"{path.name}: Schema validation failed - {e.message}")
     except Exception as exc:
         errors.append(f"{path.name}: Invalid JSON - {exc}")
     return errors
@@ -30,7 +52,7 @@ def main() -> int:
 
     json_files = list(ref_dir.rglob("*.json"))
     for f in json_files:
-        errs = validate_catalog_json(f)
+        errs = validate_catalog_json(f, root)
         all_errors.extend(errs)
 
     if all_errors:

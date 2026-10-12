@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "last_updated": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "domain": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "authority": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "domain",
+          "category"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "domains"
+  ]
+}

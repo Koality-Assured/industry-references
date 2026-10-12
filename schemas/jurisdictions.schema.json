@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "captured_at_utc": {
+      "type": "string"
+    },
+    "federal_page_dir": {
+      "type": "string"
+    },
+    "federal_verified_sources": {
+      "type": "integer"
+    },
+    "federal_source_rows": {
+      "type": "integer"
+    },
+    "jurisdictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "postal": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "court_of_last_resort": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "criminal_court_of_last_resort": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "page": {
+            "type": "string"
+          },
+          "verified_sources": {
+            "type": "integer"
+          },
+          "source_rows": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "postal",
+          "name",
+          "kind",
+          "page",
+          "verified_sources"
+        ]
+      }
+    }
+  },
+  "required": [
+    "captured_at_utc",
+    "jurisdictions"
+  ]
+}
