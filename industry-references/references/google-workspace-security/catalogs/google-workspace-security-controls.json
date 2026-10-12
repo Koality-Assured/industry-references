@@ -1,0 +1,95 @@
+{
+  "catalog": "google-workspace-security-controls",
+  "version": "1.0.0",
+  "last_updated": "2026-08-25",
+  "controls": [
+    {
+      "id": "GWS-IAM-01",
+      "service": "Admin",
+      "title": "Enforce Phishing-Resistant 2FA for All Administrators",
+      "level": "critical",
+      "benchmark_ref": "CIS Google Workspace v1.3.0 - 1.1",
+      "audit_check": "admin.security.2fa_enforced == true && admin.security.allowed_methods.includes('SecurityKey')"
+    },
+    {
+      "id": "GWS-IAM-02",
+      "service": "Admin",
+      "title": "Enforce SAML 2.0 Single Sign-On with Enterprise IdP",
+      "level": "high",
+      "benchmark_ref": "CIS Google Workspace v1.3.0 - 1.3",
+      "audit_check": "admin.sso.status == 'ENABLED'"
+    },
+    {
+      "id": "GWS-IAM-03",
+      "service": "Admin",
+      "title": "Automated User Lifecycle Deprovisioning via SCIM",
+      "level": "high",
+      "benchmark_ref": "NIST SP 800-63-4",
+      "audit_check": "admin.directory.scim_enabled == true"
+    },
+    {
+      "id": "GWS-ZDR-01",
+      "service": "Admin",
+      "title": "Enterprise Zero Data Retention & AI Training Opt-Out",
+      "level": "critical",
+      "benchmark_ref": "Enterprise Terms of Service",
+      "audit_check": "admin.ai_governance.training_opt_out == true"
+    },
+    {
+      "id": "GWS-DRV-01",
+      "service": "Drive",
+      "title": "Disable Public Link Sharing Across Root OU",
+      "level": "high",
+      "benchmark_ref": "CIS Google Workspace v1.3.0 - 2.1",
+      "audit_check": "drive.sharing.public_link_sharing == false"
+    },
+    {
+      "id": "GWS-DRV-02",
+      "service": "Drive",
+      "title": "Implement Trust Rules for Domain Collaboration",
+      "level": "high",
+      "benchmark_ref": "Google Security Baseline",
+      "audit_check": "drive.trust_rules.active_count > 0"
+    },
+    {
+      "id": "GWS-GML-01",
+      "service": "Gmail",
+      "title": "Enforce Strict SPF, DKIM 2048-bit, and DMARC Reject",
+      "level": "critical",
+      "benchmark_ref": "RFC 7489 / CIS 3.1",
+      "audit_check": "gmail.auth.dmarc_policy == 'p=reject' && gmail.auth.dkim_bits >= 2048"
+    },
+    {
+      "id": "GWS-GML-02",
+      "service": "Gmail",
+      "title": "Mandatory Human Approval Gate for Automated Email Dispatch",
+      "level": "critical",
+      "benchmark_ref": "Security MUST LLM01:2026",
+      "audit_check": "gmail.agent_policy.dispatch_requires_human_approval == true"
+    },
+    {
+      "id": "GWS-DLP-01",
+      "service": "DLP",
+      "title": "Automated Scanning for API Keys and Secrets Outbound",
+      "level": "high",
+      "benchmark_ref": "OWASP ASI09",
+      "audit_check": "dlp.rules.includes('Block-API-Keys-Outbound')"
+    },
+    {
+      "id": "GWS-CAL-01",
+      "service": "Calendar",
+      "title": "Restrict External Calendar Sharing to Free/Busy Only",
+      "level": "medium",
+      "benchmark_ref": "CIS Google Workspace v1.3.0 - 4.1",
+      "audit_check": "calendar.external_sharing == 'free_busy_only'"
+    },
+    {
+      "id": "GWS-MET-01",
+      "service": "Meet",
+      "title": "Enable Host Management and Disable Anonymous Join",
+      "level": "high",
+      "benchmark_ref": "CIS Google Workspace v1.3.0 - 5.2",
+      "audit_check": "meet.host_management == true && meet.allow_anonymous_join == false"
+    }
+  ]
+}

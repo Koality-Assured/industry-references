@@ -1,0 +1,63 @@
+{
+  "framework": "slack-security",
+  "version": "1.0.0",
+  "last_updated": "2026-08-27",
+  "controls": [
+    {
+      "id": "SLACK-SEC-01",
+      "category": "Identity & Access",
+      "title": "Mandatory SAML 2.0 Single Sign-On and Hardware MFA",
+      "description": "Enforce SAML SSO across all workspace members with phishing-resistant FIDO2 MFA.",
+      "severity": "critical"
+    },
+    {
+      "id": "SLACK-SEC-02",
+      "category": "Identity & Access",
+      "title": "SCIM Automated User Lifecycle Provisioning",
+      "description": "Automate user provisioning and immediate deprovisioning using SCIM protocol.",
+      "severity": "high"
+    },
+    {
+      "id": "SLACK-SEC-03",
+      "category": "App Governance",
+      "title": "Workspace App Approval Enforcement",
+      "description": "Enable workspace-wide app approval mode to require administrative sign-off before app installation.",
+      "severity": "high"
+    },
+    {
+      "id": "SLACK-SEC-04",
+      "category": "App Governance",
+      "title": "Granular OAuth Scope Principle of Least Privilege",
+      "description": "Restrict custom and third-party apps to minimal granular bot/user token scopes.",
+      "severity": "high"
+    },
+    {
+      "id": "SLACK-SEC-05",
+      "category": "Data Protection",
+      "title": "Zero Credential Logging & Secure Token Storage",
+      "description": "Prohibit committing or logging Slack tokens and webhook URLs; load from secure environment variables.",
+      "severity": "critical"
+    },
+    {
+      "id": "SLACK-SEC-06",
+      "category": "Integration Security",
+      "title": "HMAC-SHA256 Request Signature Verification",
+      "description": "Verify X-Slack-Signature using HMAC-SHA256 and enforce a 300-second timestamp freshness window.",
+      "severity": "critical"
+    },
+    {
+      "id": "SLACK-SEC-07",
+      "category": "Audit & Compliance",
+      "title": "Audit Logs API Ingestion",
+      "description": "Stream Slack Audit Logs API v2 events into centralized SIEM for real-time security monitoring.",
+      "severity": "medium"
+    },
+    {
+      "id": "SLACK-SEC-08",
+      "category": "Messaging Governance",
+      "title": "Broadcast Mention Authorization Gate",
+      "description": "Require explicit human authorization before dispatching @channel, @everyone, or @here mentions.",
+      "severity": "high"
+    }
+  ]
+}

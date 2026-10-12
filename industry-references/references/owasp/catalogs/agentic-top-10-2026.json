@@ -1,0 +1,64 @@
+{
+  "framework": "OWASP Top 10 for Agentic Applications",
+  "version": "2026",
+  "captured_at_utc": "2026-08-20T17:00:00Z",
+  "upstream_url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+  "announcement_url": "https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/",
+  "license_note": "OWASP GenAI — cite project; paraphrase.",
+  "advisory_only": true,
+  "entries": [
+    {
+      "id": "ASI01:2026",
+      "name": "Agent Goal Hijack",
+      "outcome": "Attacker redirects agent objectives via prompts, tools, or poisoned context."
+    },
+    {
+      "id": "ASI02:2026",
+      "name": "Tool Misuse",
+      "outcome": "Legitimate tools are invoked or chained in harmful ways beyond intended use."
+    },
+    {
+      "id": "ASI03:2026",
+      "name": "Identity and Privilege Abuse",
+      "outcome": "Agent credentials or delegated identity are over-scoped or stolen."
+    },
+    {
+      "id": "ASI04:2026",
+      "name": "Agentic Supply Chain Vulnerabilities",
+      "outcome": "MCP/A2A plugins, tools, or runtime components are compromised."
+    },
+    {
+      "id": "ASI05:2026",
+      "name": "Unexpected Code Execution",
+      "outcome": "Natural-language or tool paths lead to unintended code or command execution."
+    },
+    {
+      "id": "ASI06:2026",
+      "name": "Memory and Context Poisoning",
+      "outcome": "Persistent memory/context is tainted to change later behavior."
+    },
+    {
+      "id": "ASI07:2026",
+      "name": "Insecure Inter-Agent Communication",
+      "outcome": "Spoofed or weakly authenticated agent-to-agent messages misdirect workflows."
+    },
+    {
+      "id": "ASI08:2026",
+      "name": "Cascading Failures",
+      "outcome": "Local faults amplify across automated multi-agent pipelines."
+    },
+    {
+      "id": "ASI09:2026",
+      "name": "Human-Agent Trust Exploitation",
+      "outcome": "Convincing agent output induces humans to approve harmful actions."
+    },
+    {
+      "id": "ASI10:2026",
+      "name": "Rogue Agents",
+      "outcome": "Misaligned, concealed, or self-directed agent behavior outside policy."
+    }
+  ],
+  "counts": {
+    "entries": 10
+  }
+}
