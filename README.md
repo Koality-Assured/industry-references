@@ -91,6 +91,7 @@ The repository maintains machine-readable datasets paired with practitioner guid
 | **CIS Controls** | v8.1 Controls | [`cis-v8.1-controls.json`](references/cis-controls/catalogs/cis-v8.1-controls.json) | [`cis-v8.1.md`](references/cis-controls/cis-v8.1.md) | Prioritized cybersecurity safeguards across Implementation Groups |
 | **Conventional Commits** | v1.0.0 Specification | [`rules.json`](references/markdown/catalogs/rules.json) | [`conventional-commits.md`](references/conventional-commits/conventional-commits.md) | Structured, human- and machine-readable git commit messages |
 | **Infrastructure as Code** | Terraform Baselines | [`iac/`](references/iac/) | [`security-baselines.md`](references/iac/terraform/security-baselines.md) | Terraform security posture, provider conventions, state security |
+| **Kyverno** | Policy Engine (v1.12+) | [`kyverno/`](references/kyverno/) | [`kyverno-policy-authoring.md`](references/kyverno/kyverno-policy-authoring.md) | Kubernetes native policy management engine policies, admission controllers, and declarative compliance standards |
 | **Enterprise Identity** | AD & Cloud | [`windows-security-sources.json`](references/windows-security/catalogs/windows-security-sources.json) | [`windows-security-baselines.md`](references/windows-security/windows-security-baselines.md) | Active Directory, Google Workspace, and Slack security controls |
 | **US Statutory Law** | Federal & 50 States | [`federal.json`](references/us-law/catalogs/federal.json) | [`us-law/`](references/us-law/) | Federal codes, state statutes, and administrative source rankings |
 
@@ -114,6 +115,7 @@ industry-references/
 │   ├── google-workspace-security/
 │   ├── governance-privacy/      # GDPR, CCPA, and privacy frameworks
 │   ├── iac/                     # Terraform baselines and provider conventions
+│   ├── kyverno/                 # Kubernetes policy engine rules and guides
 │   ├── mitre-atlas/             # AI adversary tactics and techniques
 │   ├── mitre-attack/            # Enterprise ATT&CK matrix
 │   ├── nist-ai-rmf/             # NIST AI Risk Management Framework
